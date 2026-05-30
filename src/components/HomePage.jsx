@@ -53,7 +53,7 @@ const HomePage = ({ setPage }) => {
               className="hero-bg" 
               src={IMG("bg-image1")} 
               alt="The Future of Gaming"
-              fetchpriority="high"
+              fetchPriority="high"
               width={settings.cls ? 540 : undefined}
               height={settings.cls ? 338 : undefined}
             />
