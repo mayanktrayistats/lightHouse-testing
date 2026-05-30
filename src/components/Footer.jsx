@@ -12,7 +12,7 @@ const Footer = ({ setPage }) => {
           { title:"Support",  links:[["Help Center","home"],["Bug Reports","home"],["Contact Us","home"],["Terms","home"],["Privacy","home"]] },
         ].map(col=>(
           <div className="footer-col" key={col.title}>
-            <h4>{col.title}</h4>
+            <h3>{col.title}</h3>
             <ul>
               {col.links.map(([label,pg])=>(
                 <li key={label}><a href="#" onClick={e=>{e.preventDefault();setPage(pg);}}>{label}</a></li>

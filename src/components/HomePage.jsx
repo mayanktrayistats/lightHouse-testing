@@ -7,7 +7,7 @@ const StarRating = ({ rating }) => {
   return (
     <div className="game-rating">
       {"★".repeat(Math.floor(rating))}{"☆".repeat(5-Math.floor(rating))}
-      <span style={{color:"rgba(255,255,255,0.4)",fontSize:"0.78rem",marginLeft:4}}>{rating}</span>
+      <span style={{color:"rgba(255,255,255,100)",fontSize:"0.78rem",marginLeft:4}}>{rating}</span>
     </div>
   );
 }
@@ -132,7 +132,7 @@ const HomePage = ({ setPage }) => {
             height={settings.cls ? 326 : undefined}
           />
           <div className="showcase-text" style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
-            <h3>Compete on the World Stage</h3>
+            <h2>Compete on the World Stage</h2>
             <p>Join weekly tournaments, seasonal ranked ladders, and live-streamed championships broadcast to millions. Every match is a chance to prove you're the best.</p>
             <p>Earn exclusive cosmetics, rank titles, and real cash prizes.</p>
             <button className="btn-primary" style={{width:"fit-content"}} onClick={()=>setPage("tournaments")}>Join Tournament</button>
@@ -141,7 +141,7 @@ const HomePage = ({ setPage }) => {
         
         <div className="showcase-grid" style={{marginTop:"2rem"}}>
           <div className="showcase-text" style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
-            <h3>Forge Your Clan</h3>
+            <h2>Forge Your Clan</h2>
             <p>Build a squad, recruit the best players, and wage war in Clan Wars mode. Territory control, resource raiding, and clan leaderboards — dominate or be dominated.</p>
             <button className="btn-secondary" style={{width:"fit-content"}}>Create Clan</button>
           </div>

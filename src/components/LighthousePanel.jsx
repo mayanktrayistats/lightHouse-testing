@@ -158,6 +158,7 @@ export default function LighthousePanel() {
             </p>
           </div>
           <button 
+            aria-label="Close diagnostics panel"
             onClick={() => setIsOpen(false)}
             style={{ background: "transparent", border: "none", color: "rgba(255, 255, 255, 0.4)", cursor: "pointer" }}
           >
@@ -262,6 +263,7 @@ export default function LighthousePanel() {
                         checked={isActive}
                         onChange={() => handleToggle(item.id)}
                         style={{ opacity: 0, width: 0, height: 0 }}
+                        aria-label="Enable diagnostic mode"
                       />
                       <span 
                         style={{
@@ -329,7 +331,7 @@ export default function LighthousePanel() {
             <RefreshCw size={14} />
             APPLY & RELOAD PAGE
           </button>
-          <div style={{ fontSize: "0.65rem", color: "rgba(255, 255, 255, 0.3)", textAlign: "center" }}>
+          <div style={{ fontSize: "0.65rem", color: "rgba(255, 255, 255, 20)", textAlign: "center" }}>
             Reload forces standard DevTools Lighthouse scanning environment to register active options.
           </div>
         </div>
